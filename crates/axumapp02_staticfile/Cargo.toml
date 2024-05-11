@@ -1,0 +1,9 @@
+[package]
+name = "axumapp02_staticfile"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { workspace = true }
+tokio = { workspace = true, features = ["full"] }
+tower-http = { workspace = true, features = ["fs", "trace"] }

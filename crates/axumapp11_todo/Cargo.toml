@@ -1,0 +1,17 @@
+[package]
+name = "axumapp11_todo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { workspace = true }
+tokio = { workspace = true, features = ["full"] }
+tower-http = { workspace = true, features = ["fs", "trace"] }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+bb8 = "0.7"
+bb8-postgres = "0.7"
+tokio-postgres = "0.7"
+uuid = { version = "1", features = ["serde", "v4"] }
